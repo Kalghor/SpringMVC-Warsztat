@@ -20,11 +20,11 @@ public class MockBookService {
                 "programming"));
     }
 
-    public static Long getNextId() {
+    public Long getNextId() {
         return nextId;
     }
 
-    public static void setNextId(Long nextId) {
+    public void setNextId(Long nextId) {
         MockBookService.nextId = nextId;
     }
 
@@ -36,6 +36,7 @@ public class MockBookService {
         }
         return result;
     }
+
 
     public Book getBook(int id){
         return list.get(id);
